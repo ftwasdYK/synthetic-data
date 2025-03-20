@@ -1,5 +1,4 @@
 # Project description
-
 The aim of the project is to generate realistic synthetic data for stock prices and volumes.
 
 The synthetic data is composed of the following columns:
@@ -21,10 +20,18 @@ For the generation of the returns of a stock price a t-distribution is used with
 Also some jumps are added to the returns of the stock price using a Poisson distribution with a given number of events per year (num_events) and scaling it with a normal distribution. 
 This simulates some events that can affect the stock price. After generating the returns, the stock price is calculated by multiplying the returns with the previous stock price, starting from the initial stock price.
 
+Below is the plot of the generated stock price:
+
+![](./figures/synthetic_stock_pricing.png)
+
+
 ## Volume
 
 The volume is generated using a log-normal distribution with a given mean (mu_volume) and standard deviation (sigma_volume). 
 Also the volume has an autocorrelation factor (rho) that makes the volume of the next day dependent on the volume of the previous day.
+
+Below is the plot of the generated volume:
+![](./figures/synthetic_volume.png)
 
 ## Exponential and Simple Moving Averages
 
