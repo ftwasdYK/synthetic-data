@@ -11,7 +11,6 @@ The synthetic data is composed of the following columns:
 * MACD: The moving average convergence divergence of the stock price
 * Signal Line: The signal line of the stock price
 * Bollinger Bands: The upper and lower Bollinger Bands of the stock price over the last 20 trading days
-generated using the following steps:
 
 # Synthetic data generation
 
